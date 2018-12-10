@@ -31,7 +31,7 @@
 // CARDS
 
 .card {
-  height: 175px;
+  height: 100%;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   // background-size: cover !important;
   background-position: center;
@@ -43,7 +43,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 70px;
+  width: 1005;
   // position: center;
   // top: 10px;
   // width: 40px;
@@ -53,7 +53,7 @@
 .card-description {
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
   text-transform: uppercase;
 }
 .card-description h2 {
