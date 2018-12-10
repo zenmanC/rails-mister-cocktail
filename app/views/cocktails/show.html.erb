@@ -25,6 +25,10 @@
                 <li> <%= link_to "Add dose", new_cocktail_doses_path(@cocktail), class: "btn btn-primary" %> </li>
                 <li> <%= link_to "Back to cocktails", cocktails_path %> </li>
                 <li>   <%= link_to "Edit Cocktail", edit_cocktail_path(@cocktail) %> </li>
+                <li> <%= link_to "Delete", cocktail_path(@cocktail),
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+                </li>
 
               </ul>
             </div>
