@@ -4,7 +4,7 @@ p "destroying previous ingredients"
 
 Ingredient.delete_all
 
-p "creating new indgredients"
+p "creating new ingredients"
 
 require 'json'
 require 'open-uri'
