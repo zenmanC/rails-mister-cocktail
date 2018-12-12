@@ -51,7 +51,6 @@
   align-items: center;
   height: 350px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  // background-size: cover !important;
   background-position: center;
   color: white;
   position: relative;
@@ -105,6 +104,11 @@
 
 // PROFILE
 
+.profile-wrapper {
+  background: rgb(19,45,59);
+  background: linear-gradient(90deg, rgba(19,45,59,1) 0%, rgba(106,47,78,1) 61%);
+}
+
 #profile-name {
   margin: 15px;
   font-size: 70px;
@@ -113,6 +117,7 @@
   color: #E7A54D;
   text-shadow: 2px 3px 3px rgb(60, 60, 60);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .profile-container {
@@ -130,6 +135,16 @@
   height: 100%;
   margin: 70px;
   border-radius: 8px;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1))
+}
+
+.profile-list {
+  color: #E7A54D;
+  text-align: center;
+}
+
+#ingredients-list {
+  list-style-type: none;
 }
 
 #ingredients-title {
@@ -139,19 +154,74 @@
   text-align: center;
 }
 
-#profile-nav {
+#dose-btn {
   list-style-type: none;
 }
 
+.profile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px 0px 40px;
+}
+
+#profile-nav {
+  text-align: center;
+}
+
+i {
+  color: #E7A54D;
+  font-size: 35px;
+  padding: 0px 15px;
+  opacity: 0.65;
+}
+
+#trash {
+  font-size: 15px;
+}
+
+
+i:hover {
+  opacity: 1;
+}
+
+
 #profile-image {
-  padding: 30px;
+  padding: 20px 30px 70px 70px;
 }
 
 #cocktail-image {
-  padding: 30px;
+  padding: 0px 0px 0px 80px;
 }
 
-#profile-nav #dose-btn {
-  font-size: 10px;
-  color: blue;
+.btn-primary
+// .btn-primary:hover,
+// .btn-primary:active,
+// .btn-primary:visited,
+// .btn-primary:focus
+    {
+    opacity: 0.6;
+    background-color: transparent;
+    border-color: #E7A54D;
+    color: #E7A54D;
+    font-size: 15px;
 }
+
+.btn-primary:hover {
+  opacity: 1;
+  background-color: transparent;
+  border-color: #E7A54D;
+  color: #E7A54D;
+}
+
+.btn-primary:active {
+  background-color: transparent !important;
+}
+
+.btn-primary:focus {
+  background-color: transparent;
+  border-color: #E7A54D;
+  color: #E7A54D;
+}
+
+
