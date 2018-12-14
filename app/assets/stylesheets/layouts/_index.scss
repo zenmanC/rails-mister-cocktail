@@ -6,7 +6,6 @@
 // BANNER
 
 .banner {
-  color: white;
   text-align: center;
   height: 100vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
@@ -14,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: center;
 }
 
 .banner-content {
@@ -60,6 +60,13 @@
 
 // CARDS
 
+@media (max-width: 600px) {
+  .card-container {
+  display: flex;
+  justify-content: space-around;
+  }
+}
+
 .card-container {
   display: flex;
   justify-content: space-around;
@@ -69,20 +76,116 @@
   width: 100%;
 }
 
-.card {
+
+// For IPAD horizontal 1024px by 768px
+
+@media (max-width: 600px) {
+  .card {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  height: 350px;
+  height: 100%;
+  width: 310px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-position: center;
+  position: relative;
+  margin: 40px auto;
+  padding-top: 20px;
+  border-radius: 8px;
+  }
+}
+
+@media (min-width: 600px) {
+  .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 100%;
   width: 350px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-position: center;
   color: white;
   position: relative;
-  margin: 50px 30px 30px 30px;
+  margin: 40px auto;
+  padding-top: 20px;
   border-radius: 8px;
+  }
 }
+
+@media (min-width: 768px) {
+  .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  width: 330px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-position: center;
+  color: white;
+  position: relative;
+  margin: 40px auto;
+  padding-top: 20px;
+  border-radius: 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  width: 290px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-position: center;
+  color: white;
+  position: relative;
+  margin: 40px auto;
+  padding-top: 20px;
+  border-radius: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-position: center;
+  color: white;
+  position: relative;
+  margin: 40px auto;
+  border-radius: 8px;
+  }
+}
+
+
+// .card {
+//   display: flex;
+//   flex-direction: column;
+//   text-align: center;
+//   align-items: center;
+//   height: 350px;
+//   width: 350px;
+//   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+//   background-position: center;
+//   color: white;
+//   position: relative;
+//   margin: 50px 30px 30px 30px;
+//   border-radius: 8px;
+// }
+
+
+
+
+
 
 .card-image {
   margin: 10px;

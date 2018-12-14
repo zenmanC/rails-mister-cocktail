@@ -15,7 +15,7 @@ class Cocktail < ApplicationRecord
     },
 
     using: {
-      tsearch: { prefix: true }
+      tsearch: { prefix: true, any_word: true }
     }
 
 end
