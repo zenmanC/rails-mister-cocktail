@@ -10,4 +10,8 @@ Rails.application.routes.draw do
     end
 
     resources :doses, only: [:destroy]
+
+
+    get '/tagged', to: "cocktails#tagged", as: :tagged
+
     end

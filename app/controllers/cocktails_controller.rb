@@ -2,7 +2,18 @@ class CocktailsController < ApplicationController
   before_action :set_cocktail, only: [:show, :edit, :update, :destroy]
 
   def index
-    @cocktails = Cocktail.all
+    if params[:query].present?
+      @cocktails = Cocktail.search(params[:query])
+
+      @result = if @cocktails.count == 1
+        "Showing #{@cocktails.count} cocktail matching \"#{params[:query]}\""
+      else
+        "Showing #{@cocktails.count} cocktails matching \"#{params[:query]}\""
+      end
+
+    else
+      @cocktails = Cocktail.all.order(:name)
+    end
   end
 
   def show
@@ -36,6 +47,15 @@ class CocktailsController < ApplicationController
     redirect_to cocktails_path
   end
 
+  def tagged
+    if params[:tag].present?
+      @cocktails = Cocktail.tagged_with(params[:tag])
+    else
+      @cocktails = Cocktail.all
+    end
+  end
+
+
 private
 
   def set_cocktail
@@ -43,6 +63,6 @@ private
   end
 
   def cocktail_params
-    params.require(:cocktail).permit(:name, :photo, :photo2)
+    params.require(:cocktail).permit(:name, :photo, :photo2, :tag_list)
   end
 end

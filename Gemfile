@@ -4,12 +4,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.4.4'
 
 
- gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails', groups: [:development, :test]
 
- # gem 'cloudinary'
 gem 'cloudinary', '~> 1.9.1'
 
- gem 'carrierwave'
+gem 'carrierwave'
+
+gem 'acts-as-taggable-on', '~> 6.0'
+
+gem 'pg_search'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'

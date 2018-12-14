@@ -22,3 +22,20 @@ sorted_ingredients.each do |item|
 end
 
 p "ingredients complete"
+
+# p "create cocktails"
+
+# p "creating Scarlet Witch"
+
+
+# Dose.create(
+#   description: "1.5 oz",
+
+#   )
+
+# Cocktail.create(
+#   name: "Scarlet Witch",
+#   photo: "",
+#   photo2: "",
+
+#   )

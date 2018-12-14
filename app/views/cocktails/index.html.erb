@@ -7,8 +7,23 @@
 
   <div class="wrapper" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1)), url('';">
 
-  <%= link_to "Create New Cocktail", new_cocktail_path %>
+    <div class = "search">
+      <div id="bar"><%= form_tag cocktails_path, method: :get do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: "Search cocktails, teams, hero names.."
+        %>
+      <% end %></div>
+    </div>
 
+    <div class="search-result">
+      <h3 id="search-result"><%= @result %></h3>
+    </div>
+
+    <div id="create-btn">
+      <%= link_to "<i class='far fa-plus-square'></i>Create Your Own Cocktail".html_safe, new_cocktail_path %>
+    </div>
 
     <div class="card-container">
       <div class="row">
