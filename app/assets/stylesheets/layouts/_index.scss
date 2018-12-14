@@ -176,6 +176,7 @@
 .profile-list {
   color: #E7A54D;
   text-align: center;
+  line-height: 0.8;
 }
 
 #ingredients-list {
@@ -187,6 +188,14 @@
   border-bottom: 1px solid;
   padding: 5px;
   text-align: center;
+}
+
+#ingredient {
+  font-size: 18px;
+}
+
+#ingredient-minus {
+
 }
 
 #dose-btn {

@@ -10,8 +10,10 @@ class Cocktail < ApplicationRecord
   pg_search_scope :search,
     against: [ :name ],
     associated_against: {
-      ingredients: [ :name ]
+      ingredients: [ :name ],
+      tags: [ :name ]
     },
+
     using: {
       tsearch: { prefix: true }
     }

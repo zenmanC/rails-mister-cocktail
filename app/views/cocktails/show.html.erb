@@ -29,9 +29,9 @@
                   </div>
                     <% @cocktail.doses.each do |dose| %>
                     <ul id="ingredients-list">
-                      <li> <%= dose.ingredient.name %>  <%= dose.description %> <%= link_to "<i class='fas fa-minus' id='trash'></i>".html_safe, dose_path(dose),
+                      <li id="ingredient"> <%= dose.ingredient.name %>  <%= dose.description %> <span id="ingredient-minus"> <%= link_to "<i class='fas fa-minus' id='trash' style='font-size: 14px'></i>".html_safe, dose_path(dose),
                       method: :delete,
-                      data: { confirm: "Are you sure?" }%> </li>
+                      data: { confirm: "Are you sure?" }%> </li></span>
                     </ul>
                      <% end %>
 
