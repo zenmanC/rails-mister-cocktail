@@ -1,0 +1,37 @@
+<div class="navbar-wagon">
+    <!-- Logo -->
+    <a href="#" class="navbar-wagon-brand">
+      <%= cl_image_tag('ff.png') %>
+    </a>
+
+    <!-- Right Navigation -->
+    <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+
+      <%= link_to "Search", "#{cocktails_path}#bar", id: "navbar-item-right" %>
+      <%= link_to "Create Your Own", new_cocktail_path, id: "navbar-item-right" %>
+
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <img src="https://res.cloudinary.com/deux1dbrg/image/upload/v1544978983/chris.jpg" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="https://www.linkedin.com/in/chrischeung74/">Profile</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Stan_Lee">About Stan Lee</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Host</a></li>
+        <li><a href="#">Trips</a></li>
+        <li><a href="#">Messagese</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
