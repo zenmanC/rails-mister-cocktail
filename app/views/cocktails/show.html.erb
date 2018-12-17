@@ -1,3 +1,7 @@
+ <div class="top">
+    <%= render 'shared/navbar' %>
+  </div>
+
 <div class="profile-wrapper">
 
     <div class="profile-container">
@@ -44,7 +48,7 @@
 
                     <div class="profile-nav" id="profile-nav">
 
-                      <%= link_to "<i class='fas fa-arrow-circle-left'></i>".html_safe, cocktails_path %>
+                      <%= link_to "<i class='fas fa-arrow-circle-left'></i>".html_safe, "#{cocktails_path}#bar" %>
 
                       <%= link_to "<i class='fas fa-edit'></i>".html_safe, edit_cocktail_path(@cocktail) %>
 
@@ -69,4 +73,8 @@
 
     </div>
 
+</div>
+
+<div class="bottom">
+  <%= render 'shared/footer' %>
 </div>
