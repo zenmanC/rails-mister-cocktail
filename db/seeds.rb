@@ -23,19 +23,14 @@ end
 
 p "ingredients complete"
 
-# p "create cocktails"
+p "create cocktails"
 
-# p "creating Scarlet Witch"
+p "creating Scarlet Witch"
 
 
-# Dose.create(
-#   description: "1.5 oz",
+scar_cocktail = Cocktail.create(
+  name: "Scarlet Witch",
+  photo: "https://res.cloudinary.com/deux1dbrg/image/upload/v1542351467/scar_photo.png",
+  photo2: "https://res.cloudinary.com/deux1dbrg/image/upload/v1544524708/rijrdwoboked4ywukhmy.png")
 
-#   )
-
-# Cocktail.create(
-#   name: "Scarlet Witch",
-#   photo: "",
-#   photo2: "",
-
-#   )
+p "Scarlet Witch completed"
